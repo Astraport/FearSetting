@@ -632,14 +632,10 @@
                        addFearEntry();
                     }
 
-                    document.getElementById('benefits').value = parsedData.benefits |
-| '';
-                    document.getElementById('cost-6-months').value = parsedData.cost6Months |
-| '';
-                    document.getElementById('cost-1-year').value = parsedData.cost1Year |
-| '';
-                    document.getElementById('cost-3-years').value = parsedData.cost3Years |
-| '';
+                    document.getElementById('benefits').value = parsedData.benefits || '';
+                    document.getElementById('cost-6-months').value = parsedData.cost6Months || '';
+                    document.getElementById('cost-1-year').value = parsedData.cost1Year || '';
+                    document.getElementById('cost-3-years').value = parsedData.cost3Years || '';
                     
                     return true;
                 }

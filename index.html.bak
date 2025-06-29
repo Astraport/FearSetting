@@ -601,7 +601,7 @@
             }
 
             function saveData() {
-                appData.fears =;
+                appData.fears ='';
                 const fearEntries = document.querySelectorAll('.fear-entry');
                 fearEntries.forEach(entry => {
                     const id = entry.id.split('-')[7];
