@@ -653,14 +653,11 @@
                         fearsHtml += `
                             <div class="summary-fear-item">
                                 <h4>Страх #${index + 1}: Определение</h4>
-                                <div class="summary-content">${fear.define |
-| 'Нет данных'}</div>
+                                <div class="summary-content">${fear.define || 'Нет данных'}</div>
                                 <h4 style="margin-top: 1rem;">Предотвращение</h4>
-                                <div class="summary-content">${fear.prevent |
-| 'Нет данных'}</div>
+                                <div class="summary-content">${fear.prevent || 'Нет данных'}</div>
                                 <h4 style="margin-top: 1rem;">Восстановление</h4>
-                                <div class="summary-content">${fear.repair |
-| 'Нет данных'}</div>
+                                <div class="summary-content">${fear.repair || 'Нет данных'}</div>
                                 <p class="impact">Оценка влияния: ${fear.impact}/10</p>
                             </div>
                         `;
@@ -674,8 +671,7 @@
                 let benefitsHtml = `
                     <div class="summary-section">
                         <h3>Шаг 2: Потенциальные выгоды</h3>
-                        <div class="summary-content">${appData.benefits |
-| 'Нет данных'}</div>
+                        <div class="summary-content">${appData.benefits || 'Нет данных'}</div>
                     </div>
                 `;
                 wrapper.innerHTML += benefitsHtml;
@@ -684,14 +680,11 @@
                     <div class="summary-section">
                         <h3>Шаг 3: Цена бездействия</h3>
                         <h4>Через 6 месяцев:</h4>
-                        <div class="summary-content">${appData.cost6Months |
-| 'Нет данных'}</div>
+                        <div class="summary-content">${appData.cost6Months || 'Нет данных'}</div>
                         <h4 style="margin-top: 1rem;">Через 1 год:</h4>
-                        <div class="summary-content">${appData.cost1Year |
-| 'Нет данных'}</div>
+                        <div class="summary-content">${appData.cost1Year || 'Нет данных'}</div>
                         <h4 style="margin-top: 1rem;">Через 3 года:</h4>
-                        <div class="summary-content">${appData.cost3Years |
-| 'Нет данных'}</div>
+                        <div class="summary-content">${appData.cost3Years || 'Нет данных'}</div>
                     </div>
                 `;
                 wrapper.innerHTML += costHtml;
