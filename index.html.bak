@@ -522,7 +522,7 @@
             const totalSteps = 3; // Excluding welcome and summary
 
             const appData = {
-                fears:,
+                fears:'',
                 benefits: '',
                 cost6Months: '',
                 cost1Year: '',
